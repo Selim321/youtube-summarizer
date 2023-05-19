@@ -94,11 +94,11 @@ if submit_button:
     # Convert text summary into audio
     tts = gTTS(summary)
     print("converting text to audio")
-    tts.save('hello.mp3')
+    tts.save('Summary.mp3')
 
     # Download audio transcript 
-    with open('hello.mp3', 'rb') as f:
-        st.download_button('Download mp3', f, file_name='hello.mp3')
+    with open('Summary.mp3', 'rb') as f:
+        st.download_button('Download mp3', f, file_name='Summary.mp3')
 
 
 
